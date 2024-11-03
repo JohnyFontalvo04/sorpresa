@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestro Aniversario</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css"> <!-- Enlaza el archivo CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Pantalla de Inicio -->
+  <div class="login-screen">
+    <h1>Ingresa nuestra fecha de aniversario</h1>
+    <input type="text" id="dateInput" class="input-field" placeholder="DD/MM (Ejemplo: 04/05)">
+    <button class="button" onclick="checkDate()">Entrar</button>
+    <p id="errorMessage" class="error"></p>
+  </div>
+
+  <!-- Contenido de la Página -->
+  <header style="display:none;"><i class="fas fa-heart"></i> Nuestro Amor - Celebrando 6 Meses Juntos</header>
+  <div class="content" style="display:none;">
+    <div class="container section">
+      <img src="./img/foto3.jpg" alt="Foto juntos" class="photo">
+      <p>"Cada momento contigo es un recuerdo eterno. Te amo."</p>
+    </div>
+    
+    <!-- Línea de Tiempo -->
+    <div class="timeline container section">
+      <h2>Nuestra Historia</h2>
+        <p>
+          Todo comenzó un 4 de mayo, un día que, sin saberlo, se convertiría en el punto de partida de nuestra historia. Después de mucho tiempo hablando, decidimos finalmente encontrarnos, y ese encuentro fue mucho más que una simple cita; fue el inicio de un capítulo lleno de magia y conexión.
+        </p>
+        <p>
+          Ese día quedó grabado en mi memoria como un instante especial, un momento que marcó un antes y un después en nuestras vidas. Desde entonces, hemos enfrentado juntos muchos obstáculos, cada uno de ellos forjando nuestra relación y fortaleciendo el lazo que compartimos.
+        </p>
+        <p>
+          Hoy, al celebrar seis meses como pareja, puedo decir que, aunque parezca un período breve, para mí significa muchísimo. Cada día a tu lado ha sido un regalo, y estoy emocionado por todo lo que nos espera en el futuro.
+        </p>
+    </div>
+
+    <!-- Galería de Fotos -->
+    <div class="gallery container section">
+      <h2>Momentos Especiales</h2>
+      <img src="./img/foto1.jpg" alt="Foto 1">
+      <img src="./img/foto2.jpg" alt="Foto 2">
+      <img src="./img/foto4.jpg" alt="Foto 3">
+    </div>
+
+    <!-- Cartas o Mensajes -->
+    <div class="letters container section">
+      <h2>Cartas de Amor</h2>
+      <p>Mi querida gordita,</p>
+      <p>
+        Hoy celebramos seis meses de este hermoso viaje juntos, y no puedo evitar sentirme agradecido por cada momento que hemos compartido. Desde que entraste en mi vida, todo ha cambiado para mejor. Tu risa y tu ternura son un faro que ilumina mis días.
+      </p>
+      <p>
+        A lo largo de estos meses, hemos enfrentado desafíos, pero cada uno de ellos nos ha enseñado a crecer y a mejorar. Me enorgullece ver cómo hemos sabido afrontar juntos cada obstáculo, fortaleciendo nuestra conexión y nuestro amor.
+      </p>
+      <p>
+        Quiero que sepas que siempre te llevo en mi corazón, y cada recuerdo contigo es un tesoro que valoro profundamente. Estoy emocionado por todo lo que nos espera y por las nuevas experiencias que aún tenemos por vivir.
+      </p>
+      <p>
+        Feliz seis meses, mi gordita. Gracias por ser tan increíble y por hacer de cada día una aventura maravillosa.
+      </p>
+      <p>
+        Con todo mi amor, Tu gordito
+      </p>
+    </div>
+
+    <!-- Video Especial -->
+    <div class="video-section container section">
+      <h2>Video Especial</h2>
+      <video width="100%" controls>
+        <source src="./img/Video.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+    
+    
+
+    <!-- Mensaje sorpresa -->
+    <div class="container">
+      <button class="button" onclick="showMessage()">Descubrir un Mensaje Secreto</button>
+      <p id="secretMessage" class="hidden">"¡Te amo más de lo que las palabras pueden expresar! Gracias por estos seis meses."</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script> <!-- Enlaza el archivo JS -->
+</body>
+</html>

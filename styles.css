@@ -1,0 +1,246 @@
+/* Estilos Generales */
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #faf3f3;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+header {
+  background-color: #f4c2c2;
+  width: 100%;
+  padding: 20px;
+  font-size: 28px;
+  color: #9a1f40;
+  font-weight: bold;
+  font-family: 'Brush Script MT', cursive;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centrar texto en el header */
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto; /* Centrando el contenedor */
+}
+
+.section {
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  text-align: left;
+  width: 100%; /* Asegura que el ancho ocupe todo el espacio disponible */
+  box-sizing: border-box; /* Incluir padding y border en el tamaño total */
+}
+
+.section h2 {
+  color: #9a1f40;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 32px;
+  text-align: center; /* Centrar los encabezados */
+}
+
+.photo {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+p, li {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Botón centrado */
+.button {
+  background-color: #9a1f40;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-family: 'Georgia', serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 auto; /* Centra el botón horizontalmente */
+  display: block; /* Asegura que el botón ocupe un bloque completo */
+}
+
+.button:hover {
+  background-color: #d94e67;
+}
+
+.hidden {
+  display: none;
+}
+
+#errorMessage {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  header {
+    font-size: 24px;
+    padding: 15px; /* Reducir el padding en pantallas más pequeñas */
+  }
+
+  .container {
+    width: 95%; /* Aumentar el ancho para pantallas más pequeñas */
+    margin: 10px auto; /* Asegura el centrado */
+  }
+
+  .section {
+    padding: 20px; /* Reducir el padding en secciones */
+    margin-top: 20px; /* Reducir margen superior */
+  }
+
+  .section h2 {
+    font-size: 24px; /* Reducir el tamaño del encabezado */
+  }
+
+  .button {
+    font-size: 16px; /* Ajustar el tamaño de la fuente del botón */
+  }
+}
+
+@media (max-width: 480px) {
+  .login-screen h1 {
+    font-size: 24px; /* Reducir tamaño del título */
+  }
+
+  .section {
+    padding: 15px; /* Reducir aún más el padding */
+  }
+
+  .button {
+    padding: 8px 16px; /* Ajustar el tamaño del botón */
+  }
+}
+
+
+/* Fondo de pantalla de inicio */
+.login-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffe4e1 0%, #ffccd5 100%);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Título */
+.login-screen h1 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 36px;
+  color: #ff6f91;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+
+/* Input personalizado */
+.input-field {
+  padding: 15px;
+  width: 80%;
+  max-width: 300px;
+  border: 2px solid #ffc1cc;
+  background-color: #ffffff;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #ff6f91;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, border-color 0.3s;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #ff6f91;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Botón personalizado */
+.button {
+  padding: 12px 30px;
+  border-radius: 25px;
+  background-color: #ff6f91;
+  color: #ffffff;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: #ff4f73;
+  transform: scale(1.05);
+}
+
+/* Mensaje de error */
+#errorMessage {
+  color: #ff4f73;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+
+
+.heart {
+  position: absolute;                /* Asegura que cada corazón esté en una posición absoluta */
+  animation: float 3s ease-in-out;  /* Aumenta la duración de la animación */
+  pointer-events: none;             /* Evita que los corazones interfieran con otros elementos */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);       /* Comienza en su posición original */
+  }
+  50% {
+    transform: translateY(-20px);   /* Se eleva un poco */
+  }
+  100% {
+    transform: translateY(0);        /* Regresa a su posición original */
+  }
+}
+
+
+.image-container {
+  display: flex;               /* Utiliza flexbox para centrar */
+  justify-content: center;     /* Centra horizontalmente */
+  margin: 20px 0;             /* Margen opcional para espaciado */
+}
+
+.centered-photo {
+  max-width: 100%;            /* Ancho máximo para que la imagen no sea demasiado grande */
+  height: auto;               /* Mantiene la proporción de la imagen */
+  border-radius: 15px;        /* Estilo opcional */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+}
+
+.hidden {
+  display: none;
+}
